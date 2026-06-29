@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfólio de Oziel do Nascimento Costa, desenvolvedor com foco em JavaScript, Node.js, React e APIs.">
-  <title>Oziel do Nascimento Costa | Desenvolvedor</title>
+  <title>Oziel Costa | Desenvolvedor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
     <a class="brand" href="#inicio" aria-label="Voltar ao início">Oziel Costa</a>
     <nav class="nav-links">
       <a href="#sobre">Sobre</a>
+      <a href="#trajetoria">Trajetória</a>
       <a href="#projetos">Projetos</a>
       <a href="#certificados">Certificados</a>
       <a href="#contato">Contato</a>
@@ -61,6 +62,25 @@
       </div>
     </section>
 
+    <section class="section split-section" id="trajetoria">
+      <div>
+        <p class="section-label">Trajetória</p>
+        <h2>Mais de 15 anos de liderança aplicados à tecnologia</h2>
+      </div>
+      <div class="section-copy">
+        <p>
+          Antes da transição para desenvolvimento, atuei por mais de 15 anos em supervisão
+          de operações elétricas de alta tensão, liderando equipes em ambientes críticos
+          que exigem precisão, disciplina e resolução de problemas sob pressão.
+        </p>
+        <p>
+          Essa experiência se traduz hoje em maturidade para lidar com prazos, comunicação
+          clara em equipe e responsabilidade técnica — competências que aplico no dia a dia
+          do desenvolvimento de software.
+        </p>
+      </div>
+    </section>
+
     <section class="section skills-section" aria-labelledby="skills-title">
       <div class="section-heading">
         <p class="section-label">Competências</p>
@@ -95,8 +115,8 @@
         <p class="section-label">Projeto em destaque</p>
         <h2>Dev Burguer</h2>
         <p>
-          Aplicação web para cardápio e pedidos, com interface em React, autenticação,
-          carrinho, categorias de produtos e integração com API.
+          Aplicação web de e-commerce para cardápio e pedidos, com interface em React, autenticação,
+          carrinho persistente, categorias de produtos e checkout com pagamento real via Stripe.
         </p>
       </div>
 
@@ -104,11 +124,12 @@
         <article class="project-card featured-project">
           <img src="assets/videoframe_16807.png" alt="Tela do Dev Burguer com categorias, ofertas e carrinho">
           <div class="project-content">
-            <p class="project-kicker">Frontend</p>
-            <h3>Experiência de compra</h3>
+            <p class="project-kicker">Frontend · E-commerce</p>
+            <h3>Checkout completo com pagamento real</h3>
             <p>
-              Tela com categorias de produtos, ofertas do dia e cards de itens.
-              O projeto mostra domínio de componentes, estado visual e fluxo de carrinho.
+              Fluxo de compra ponta a ponta: carrinho com Context API e persistência em localStorage,
+              cálculo dinâmico de totais e checkout integrado ao Stripe (Payment Element) para
+              processar pagamentos de forma segura.
             </p>
             <a class="project-link" href="https://github.com/OzielCosta-Dev/devburger-interface" target="_blank" rel="noopener">Ver código no GitHub →</a>
           </div>
@@ -117,11 +138,12 @@
         <article class="project-card">
           <img src="assets/videoframe_7428.png" alt="Tela de login do Dev Burguer ao lado do código React">
           <div class="project-content">
-            <p class="project-kicker">Autenticação</p>
-            <h3>Login e validação</h3>
+            <p class="project-kicker">Arquitetura</p>
+            <h3>Sessão de usuário e estado global</h3>
             <p>
-              Formulário com validação de e-mail e senha, fluxo de acesso e organização
-              de componentes para telas públicas.
+              Autenticação com validação via React Hook Form + Yup, sessão persistida em localStorage
+              e contextos globais (usuário e carrinho) compartilhados entre rotas, com header dinâmico
+              exibindo nome do usuário e atalho para o carrinho.
             </p>
             <a class="project-link" href="https://github.com/OzielCosta-Dev/devburger-interface" target="_blank" rel="noopener">Ver código no GitHub →</a>
           </div>
